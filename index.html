@@ -1,87 +1,23 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Portfolio</title>
-    <meta charset="UTF-8" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
-    <script
-      crossorigin
-      src="https://unpkg.com/react@16/umd/react.development.js"
-    ></script>
-
-    <script
-      crossorigin
-      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
-    ></script>
-    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
-  </head>
-
-  <body>
-    <div id="a"></div>
-
-    <script type="text/babel">
-  
-   const Name=()=><div style={{marginLeft:"15px",color:"white"}}><h1 style={{marginLeft:"31px"}} >Padmavathi</h1><p style={{textAlign:"center",fontSize:"17px"}}>Hi, iam Padmavathi and iam a software developer. welcome to my personal website.</p></div>
-   const A1=()=><a href="#" style={{color:"white"}}><i className="fab fa-facebook-f"></i></a>
-    const A2=()=><a href="https://github.com/padma67" style={{color:"white"}}><i class="fab fa-github"></i></a>
-     const A3=()=><a href="#" style={{color:"white"}}><i class="fab fa-twitter"></i></a>
-      const A4=()=><a  href="mailto: padmaeee1056@gmail.com" style={{color:"white"}}><i class="fab fa-invision"></i></a>
-   const Contact=()=><div style={{marginTop:"45px"}}><tr style={{fontSize:"21px"}}><td><div style={{marginLeft:"35px"}}><A1/></div></td><td><div style={{marginLeft:"35px"}}><A2/></div></td><td><div style={{marginLeft:"35px"}}><A3/></div></td><td><div style={{marginLeft:"35px"}}><A4/></div></td></tr></div>
-
-   const About=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}} ><a href="sidebar.html" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-circle ip" ></i>About Me</a></div>
-   const Resume=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="myprofie.html" style={{color:"white",textDecoration:"none"}}><i class="fas fa-briefcase ip"></i> Resume</a></div>
-   const Portfolio=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-graduate ip"></i>Portfolio</a></div>
-   const Phone=()=><div style={{marginLeft:"55px",fontSize:"25px",marginTop:"45px"}}><a href="#" style={{color:"white",textDecoration:"none"}}><i class="fas fa-user-circle ip" ></i> Contact</a></div>
-   const SideDiv=()=><div style={{width:"21%",height:"655px",backgroundColor:"DarkOrchid",position:"fixed",left:"0px"}}><Name/><Contact/><About/><Resume/><Portfolio/><Phone/></div>
-
-   const Div11=()=><div style={{width:"45%",height:"255px",marginLeft:"285px",borderRadius:"55px",border:"9px solid Darkblue",boxShadow:"1px 1px 9px 1px",backgroundColor:"Skyblue"}}><div style={{marginLeft:"75px",width:"65%"}}><h1 style={{textAlign:"center"}}>Padmavathi M</h1><p style={{textAlign:"center"}}>Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as a web developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p><a href="myprofie.html" style={{width:"55px",marginLeft:"65px",fontSize:"21px",textDecoration:"none",color:"white"}}> View My Resume</a></div></div>
-   const Div1=()=><div  style={{width:"105%",height:"255px",position:"absolute",top:"15px"}}><Div11/></div>
-   const Skill=(props)=><h2>{props.name}</h2>
-   const Skildet=(props)=><p>{props.det}</p>
-   const Div21=()=><td  ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}} src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTSA6DkRonP_NSzoXTf13QZ2uHLZGQhNmhwSgDP84s8j-RcpbnP&usqp=CAU"/><Skill name="javascript"/><Skildet det="JavaScript is the programming language of HTML and the Web. JavaScript is easy to learn. This tutorial will teach you JavaScript from basic to advanced."/></div></td>
-
-   const Div22=()=><td ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQn0rKmRMbvC8E9PO5-9z20tBHP7ma1YY-UaEpIEShvQOYa0VWg&usqp=CAU"/> <Skill name="HTML & CSS"/><Skildet det="HTML is the foundation of all web pages. It defines the structure of a page, while CSS defines its style. HTML and CSS are the beginning of everything you need to know to make your first web page!"/></div></td>
-
-   const Div23=()=><td  ><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSleg3sVx7tpXTBVRq1SLFOVJQgyGsMZ4bL8giR_BRROxxWFflT&usqp=CAU"/><Skill name="Python"/><Skildet det="Python is an interpreted, high-level, general-purpose programming language.Python's design philosophy emphasizes code readability with its notable use of significant whitespace. "/></div></td>
-
-   const Div24=()=><td><div style={{width:'75%',height:"65px"}}><img style={{width:"55px",height:"55px"}}  src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQjH4jQFUVlDJLxRj74fHXaXxlTRgDLBz-gwKplR9zMkytCzStz&usqp=CAU"/><Skill name="MySql"/><Skildet det="MySQL is an open-source relational database management syste  that allows you to manage relational databases. It is open source software backed by Oracle"/></div></td>
-
-   const Row1=()=><div style={{position:"relative",top:"55px"}} ><tr><Div21/><Div22/><Div23/><Div24/></tr></div>
-   const Div2=()=><div style={{marginLeft:"95px",position:"absolute",top:"335px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Skills</li><Row1/></div>
-
-
-   const Education=()=><div style={{marginLeft:"95px",position:"absolute",top:"775px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Education</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcRENJ2KcfGreGeaa130N3KlZ-HJhglwYMyDCw5hOAXSGarcEyAb&usqp=CAU"/>
-    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p>completed sslc at St.Philomina's Girls High School with 96% in year of 2013</p><p>completed HSC at St.Anne's Girls Hr. Sec. School with 86% in year of 2015</p>
-        <p>studied B.E(EEE) from Arunai Engineering College with 7.5GPA in year of 2019</p></div>
-   </div>
-
-
-   const Activities=()=><div style={{marginLeft:"95px",position:"absolute",top:"1155px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>Extra Activities and hobbies</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcT4kjm0rvzbKjjtWqSv9ZVvJr9SVAuzHXkoQPoEWJdBADdvCVb5&usqp=CAU"/>
-    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p>Participated in cultural activities in  College</p>
-          <p>Attended NCC camp </p>
-          <p>Spent free time on learn new technologies</p>
-          <p>Having interest in drawing and reading books</p> 
-          <p>Like to do innovative things</p></div>
-   </div>
-
-   const Workshop=()=><div style={{marginLeft:"95px",position:"absolute",top:"1525px"}}><li style={{listStyleType:"square",fontSize:"41px",color:"blue",textDecoration:"bold"}}>WorkShops</li><img style={{width:"385px",height:"255px",marginTop:"25px",position:"absolute"}}src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQHRtfHoKjXhG85Ni7Q3z82bqvZLvLpGjI31JNoyixCjlsifyTy&usqp=CAU"/>
-    <div style={{width:"485px",height:"255px",marginTop:"25px",position:"absolute",left:"415px",fontSize:"21px"}}><p> E-Commerce and its industrial applications by Department of management  studies</p>
-            <p>International symposium on Technical education as a tool for sustainable development</p>
-            <p>Convention on direct and indirect taxes in India (GST) by Department  of management.</p></div>
-   </div>
-   const MainDiv1=()=><div style={{width:"79%",height:"1935px",position:"absolute",left:"275px",top:"0px"}}><Div1/><Div2/><Education/><Activities/><Workshop/></div>
-
-
-
-
-   const Maindiv=()=><div style={{width:"95%",height:"flex",position:"absolute",top:"0px",fontFamily:"Roboto"}}><SideDiv/><MainDiv1/></div>
-
-
-   ReactDOM.render(<Maindiv/>,document.getElementById("a"));
-
-  
-    </script>
-  </body>
+<head>
+	<title>
+		
+	</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style type="text/css">
+	.container{
+		display: flex;
+	}
+</style>
+<body>
+<div class="container">
+	<div class="first" style="background-color: red;width:25%;height: 355px">
+	</div>
+	<div class="second" style="background-color: blue;flex: 2">
+		
+	</div>
+</div>
+</body>
 </html>
