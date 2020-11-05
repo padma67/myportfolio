@@ -102,13 +102,37 @@
 		text-indent: 315px;
 		display: flex;
 	}
+	.profile{
+		position: relative;left: 45px;
+	}
 	.nameOrder{
         display: flex;
-        justify-content: center;
+       flex-direction: column;
 	}
 	.block{
 		display: flex;
 		flex-direction: column;
+	}
+	#ts{
+		text-indent: 45px;
+	}
+	.fa-user-circle{
+		top: 25px;
+	}
+	.fa-book-reader{
+		top: 135px;
+	}
+	.fa-briefcase{
+		top:375px;
+	}
+	.fa-user-graduate{
+		top: 25px;
+	}
+	.fa-laptop-code{
+		top: 175px;
+	}
+	.fa-book-open{
+		top:375px;
 	}
 
 	@media(max-width: 700px){
@@ -118,8 +142,9 @@
 		.name{
 		text-indent: 85px;
 	}
+	
 	.left{
-		width:100%;
+		width:50%;
 		position:relative;
 		z-index:2;
 		top:20;
@@ -128,7 +153,7 @@
 
 	}
 	.right{
-		width:100%;
+		width:50%;
 		position:relative;
 		z-index:2;
 		top:20;
@@ -136,6 +161,38 @@
 
 		left:0;
 	}
+	.profile{
+		position: relative;left: 6px;
+	}
+	#head{
+		text-indent: 26px;
+		
+	}
+	.fa-user-circle{
+		top: 25px;
+		left: 6px;
+	}
+	.fa-book-reader{
+		top: 195px;
+		left: 6px;
+	}
+	.fa-briefcase{
+		top:455px;
+		left: 6px;
+	}
+	.fa-user-graduate{
+		top: 25px;
+		left: 6px;
+	}
+	.fa-laptop-code{
+		top: 325px;
+		left: 6px;
+	}
+	.fa-book-open{
+		top:525px;
+		left: 6px;
+	}
+
 	}
 </style>
 <body>
@@ -150,12 +207,12 @@
 		<hr>
 		<div class="block">
 		<div class=" left" >
-			<div><h2 id="head"> Profile</h2><i class="fas fa-user-circle ip" style="top: 25px;"></i></div>
-			<div style="position: relative;left: 45px;">
-			<p style="text-align: left; ">Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as aweb developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p></div>
-			<div><h2 id="head">skills </h2><i class="fas fa-book-reader ip" style="top: 129px;"></i></div>
+			<div ><h2 id="head"> Profile</h2><i class="fas fa-user-circle ip"></i></div>
+			<div class="profile">
+			<p >Innovative optimized solution seeker.Excited to be at the deployment phase of my new career as aweb developer. I am ambitious,adventurous,assiduous,animated, and an a literation advocate.</p></div>
+			<div><h2 id="head">skills </h2><i class="fas fa-book-reader ip" ></i></div>
 			<div id="tskills">
-				<h3 style="text-indent: 45px;">Technical Skills</h3>
+				<h3 id="ts">Technical Skills</h3>
 				<li class="point">Javascript</li><div class="container"><div class="skills js">65%</div></div>
 					<li class="point">Python</li><div class="container"><div class="skills pyt">75%</div></div>
 					<li class="point">HTML</li><div class="container"><div class="skills Html">80%</div></div>
@@ -163,7 +220,7 @@
 					<li class="point">Mysql</li><div class="container"><div class="skills mysql">60%</div></div>
 				
 			</div>
-			<div><i class="fas fa-briefcase ip" style="top:375px;"></i><h2 id="head">Workshops</h2></div>
+			<div><i class="fas fa-briefcase ip" ></i><h2 id="head">Workshops</h2></div>
 			<p class="point">	E-Commerce and its industrial applications by Department of management  studies</p>
             <p class="point">International symposium on Technical education as a tool for sustainable development</p>
             <p class="point">Convention on direct and indirect taxes in India (GST) by Department  of management.</p>
