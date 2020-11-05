@@ -43,17 +43,17 @@
 	}
 	
 	#mypro{
-		position: relative;
+		
 		text-align: center;
 		background-color: orange;
-		left:375px;
+		margin-left:375px;
 		width: 35%;
 		height: 40px;
 		margin-top: 11px;
 		padding-top: 5px;
         border-radius: 5px;
         font-size: 21px;
-        top: 15px;
+        margin-top: 15px;
 		
 	}
 	.container{
@@ -98,14 +98,57 @@
 		background-color: yellow;
 		border-radius: 11px;
 	}
+	.name{
+		text-indent: 315px;
+		display: flex;
+	}
+	.nameOrder{
+        display: flex;
+        justify-content: center;
+	}
+	.block{
+		display: flex;
+		flex-direction: column;
+	}
+
+	@media(max-width: 700px){
+		#mypro{
+			margin-left: 85px;
+		}
+		.name{
+		text-indent: 85px;
+	}
+	.left{
+		width:100%;
+		position:relative;
+		z-index:2;
+		top:20;
+		padding: -top:10px;
+		left:0;
+
+	}
+	.right{
+		width:100%;
+		position:relative;
+		z-index:2;
+		top:20;
+		padding: -top:10px;
+
+		left:0;
+	}
+	}
 </style>
 <body>
 	<div class="pro"></div>
 	<div id="mainpage">
 		
 		<p id="mypro">My Profile</p>
-		<h4 style="text-indent: 315px">Padmavathi M,No.13 North street,killai,cuddalore 608102| padmaeee156@gmail.com</h4>
+		<div class="nameOrder">
+		<h4 class="name">Padmavathi M</h4>
+		<h4 class="name">No.13 North street,killai,cuddalore 608102</h4>
+		<h4 class="name">padmaeee156@gmail.com</h4></div>
 		<hr>
+		<div class="block">
 		<div class=" left" >
 			<div><h2 id="head"> Profile</h2><i class="fas fa-user-circle ip" style="top: 25px;"></i></div>
 			<div style="position: relative;left: 45px;">
@@ -140,6 +183,7 @@
 				<div><h2 id="head">Paper presentation</h2><i class="fas fa-book-open ip" style="top: 395px;"></i></div>
 				<p class="point">Women Empowerment</p><p class="point">Global warming</p><p class="point">Ultra sonic motor</p>
 
+			</div>
 			</div>
 	</div>
 	</body>
